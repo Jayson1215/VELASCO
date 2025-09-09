@@ -1,0 +1,21 @@
+import Example from "./Example";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./Home";
+
+export default function Router() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Example />} />
+                <Route path="/home" element={<Home />} />
+            </Routes>
+        </Router>
+    );
+}
+
+if (document.getElementById('router')) {
+    ReactDOM.render(<Router />, document.getElementById('router'));
+}
+
