@@ -27,6 +27,7 @@ return array(
     'App\\Models\\Courses' => $baseDir . '/app/Models/Courses.php',
     'App\\Models\\Departments' => $baseDir . '/app/Models/Departments.php',
     'App\\Models\\Faculty' => $baseDir . '/app/Models/Faculty.php',
+    'App\\Models\\Profile' => $baseDir . '/app/Models/Profile.php',
     'App\\Models\\Student' => $baseDir . '/app/Models/Student.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\Users' => $baseDir . '/app/Models/Users.php',
