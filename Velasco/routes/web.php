@@ -13,15 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// routes/web.php
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); // or 'home' if you're using a custom view
+});
+Route::get('/home', function () {
+    return view('home'); // or 'welcome' if you're using a custom view
+})->where('any', '^(?api)."$');
+
+Route::get('/home', function () {
+    return view('home');
 });
 
 Route::get('/home', function () {
-    return view('home');
-})->where('any', '^(?!api)."$');
-
-Route::get('/home', function () {
-    return view('home');
-})->where('any', '^(?!api)."$');
-
+    return view('home'); // This loads resources/views/home.blade.php
+});

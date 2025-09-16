@@ -1,6 +1,6 @@
 import Example from "./Example";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "home";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
 
@@ -9,7 +9,7 @@ export default function Router() {
         <Router>
             <Routes>
                 <Route path="/" element={<Example />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/Home" element={<Home />} />
             </Routes>
         </Router>
     );
@@ -18,4 +18,3 @@ export default function Router() {
 if (document.getElementById('router')) {
     ReactDOM.render(<Router />, document.getElementById('router'));
 }
-

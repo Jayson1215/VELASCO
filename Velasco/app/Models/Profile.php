@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
-    use HasFactory;
+    protected $fillable = ['first_name', 'last_name'];
 
-    // Allow mass assignment for these fields
-    protected $fillable = ['name', 'email', 'bio'];
+    // 🚫 Disable created_at / updated_at
+    public $timestamps = false;
 }
