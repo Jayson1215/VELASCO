@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #43a047;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.message.success {
+  background: #e8f5e9;
+  color: #4CAF50;
+}
+.message.error {
+  background: #ffebee;
+  color: #e74c3c;
+}
+
+.profiles {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.profiles li {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+.profiles li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.profiles li span {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+.profiles li .actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+.profiles li .actions .edit {
+  background: #2196F3;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.profiles li .actions .edit:hover {
+  background: #1976D2;
+  transform: translateY(-1px);
+}
+.profiles li .actions .delete {
+  background: #e74c3c;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.profiles li .actions .delete:hover {
+  background: #c62828;
+  transform: translateY(-1px);
+}
